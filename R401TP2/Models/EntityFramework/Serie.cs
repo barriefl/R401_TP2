@@ -32,4 +32,15 @@ public partial class Serie
     [Column("network")]
     [StringLength(50)]
     public string? Network { get; set; }
+
+    public Serie(int serieid, string titre, string? resume, int? nbsaisons, int? nbepisodes, int? anneecreation, string? network)
+    {
+        Serieid = serieid;
+        Titre = titre;
+        Resume = resume;
+        Nbsaisons = nbsaisons;
+        Nbepisodes = nbepisodes;
+        Anneecreation = anneecreation;
+        Network = network;
+    }
 }
